@@ -28,4 +28,4 @@ This project utilizes GitHub's API to create a GitHub profile card. The card sho
 
 ## Preview
 
-![profile_card](./img/Screenshot%202024-02-06%20at%2012.30.28.png)
+![profile_card](./img/Screenshot%202024-02-06%20at%2014.15.37.png)
