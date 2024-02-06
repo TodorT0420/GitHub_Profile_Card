@@ -1,8 +1,30 @@
-# React + Vite
+# GitHub Profile Card
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project utilizes GitHub's API to create a GitHub profile card. The card showcases essential details about a user's GitHub profile, including their profile picture, name, username, follower/following count, organizations, number of repositories, companies, and the languages used.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- Display user's profile picture.
+- Show user's name and username.
+- Indicate follower and following counts.
+- Show user's organizations and companies.
+- List number of repositories and languages used.
+
+## Technologies
+
+- JavaScript (React.js)
+- GitHub API
+
+## Usage
+
+1. Clone the repository: git clone https://github.com/TodorT0420/GitHub_Profile_Card.git;
+
+2. Install all dependancies: npm install.
+
+3. Run the application: npm run dev.
+
+## Preview
+
+![profile_card](./img/Screenshot%202024-02-06%20at%2012.30.28.png);
