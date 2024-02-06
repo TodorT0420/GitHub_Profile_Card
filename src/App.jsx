@@ -43,11 +43,6 @@ function App() {
 
   return (
     <div className="mt-10">
-      {/* <img
-        className="absolute w-screen h-screen object-cover md:h-screen md:w-screen"
-        src={BgImg}
-        alt="background-img"
-      /> */}
       <Card data={data} />
       {/* <Quotes/> */}
     </div>
