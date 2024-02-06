@@ -15,11 +15,12 @@ This project utilizes GitHub's API to create a GitHub profile card. The card sho
 ## Technologies
 
 - JavaScript (React.js)
-- GitHub API
+- GitHub API (Axios)
+- Tailwindcss (daisyUi)
 
 ## Usage
 
-1. Clone the repository: git clone https://github.com/TodorT0420/GitHub_Profile_Card.git;
+1. Clone the repository: git clone https://github.com/TodorT0420/GitHub_Profile_Card.git.
 
 2. Install all dependancies: npm install.
 
@@ -27,4 +28,4 @@ This project utilizes GitHub's API to create a GitHub profile card. The card sho
 
 ## Preview
 
-![profile_card](./img/Screenshot%202024-02-06%20at%2012.30.28.png);
+![profile_card](./img/Screenshot%202024-02-06%20at%2012.30.28.png)
