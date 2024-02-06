@@ -3,8 +3,8 @@ import axios from "axios";
 import Card from "./components/Card/Card";
 import { GITHUB_USER_API_KEY } from "./common/constants";
 import Loader from "./components/Loader/Loader";
-// import BgImg from "./assets/bgIMG.png";
 // import Quotes from "./components/Quotes/Quotes";
+import Footer from "./components/Footer/Footer";
 function App() {
   const [data, setData] = useState(null);
 
@@ -45,6 +45,7 @@ function App() {
     <div className="mt-10">
       <Card data={data} />
       {/* <Quotes/> */}
+      <Footer />
     </div>
   );
 }

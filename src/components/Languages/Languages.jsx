@@ -28,11 +28,11 @@ const Languages = ({ languages }) => {
   return (
     <div className="">
       <p>Used Languages</p>
-      <div className="flex items-center ml-7">
+      <div className="flex items-center ml-9">
+        <span className="text-xs mr-2">Scroll</span>
         <span>
           <FaArrowRight className="animate-pulse inline text-sm" />
         </span>
-        <span className="text-xs ml-1">Scroll</span>
       </div>
       <div className="w-20 ml-5 carousel rounded-box">
         {uniqueLanguages.map((language, index) => (
@@ -47,7 +47,6 @@ const Languages = ({ languages }) => {
       </div>
     </div>
   );
-  
 };
 
 Languages.propTypes = {

@@ -1,6 +1,7 @@
 import { HiMiniUsers } from "react-icons/hi2";
 import { RiGitRepositoryCommitsLine } from "react-icons/ri";
 import { GoOrganization } from "react-icons/go";
+import { VscOrganization } from "react-icons/vsc";
 
 import PropTypes from "prop-types";
 import Languages from "../Languages/Languages";
@@ -36,15 +37,19 @@ const Card = ({ data }) => {
               {formatNumber(data.followers)} &#183;{" "}
             </span>
             Following{" "}
-            <span className="text-white font-serif">{formatNumber(data.following)}</span>
+            <span className="text-white font-serif">
+              {formatNumber(data.following)}
+            </span>
           </div>
           <div className="mt-7 text-gray-500 text-start flex items-start">
-            <GoOrganization className="inline w-6 h-6 mr-1" />
+            <VscOrganization className="inline w-6 h-6 mr-1" />
             <span className="text-white font-serif">Organizations: </span>
             {data.organization.map((org, index) => (
               <span key={index} className="flex items-center ml-2">
                 <img className="w-7 h-7" src={org.avatar} alt={org.name} />
-                <span className="text-white ml-2 font-thin font-mono text-sm">{org.name}</span>
+                <span className="text-white ml-2 font-thin font-mono text-sm">
+                  {org.name}
+                </span>
               </span>
             ))}
           </div>
@@ -52,7 +57,9 @@ const Card = ({ data }) => {
           <div className="mt-3 text-gray-500 text-start">
             {" "}
             <RiGitRepositoryCommitsLine className="inline w-6 h-6 mr-1" />
-            <span className="text-white font-serif">Repositories: {data.repos}</span>
+            <span className="text-white font-serif">
+              Repositories: {data.repos}
+            </span>
           </div>
           <div className="mt-3 text-gray-500 text-start font-serif">
             {" "}
