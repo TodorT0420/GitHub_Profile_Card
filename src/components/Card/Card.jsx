@@ -32,19 +32,19 @@ const Card = ({ data }) => {
           </div>
           <div className="mt-5 text-gray-500 text-center">
             <HiMiniUsers className="w-6 h-6 inline " /> Followers{" "}
-            <span className="text-white">
+            <span className="text-white font-serif">
               {formatNumber(data.followers)} &#183;{" "}
             </span>
             Following{" "}
-            <span className="text-white">{formatNumber(data.following)}</span>
+            <span className="text-white font-serif">{formatNumber(data.following)}</span>
           </div>
           <div className="mt-7 text-gray-500 text-start flex items-start">
             <GoOrganization className="inline w-6 h-6 mr-1" />
-            <span className="text-white">Organizations: </span>
+            <span className="text-white font-serif">Organizations: </span>
             {data.organization.map((org, index) => (
               <span key={index} className="flex items-center ml-2">
                 <img className="w-7 h-7" src={org.avatar} alt={org.name} />
-                <span className="text-white ml-1">{org.name}</span>
+                <span className="text-white ml-2 font-thin font-mono text-sm">{org.name}</span>
               </span>
             ))}
           </div>
@@ -52,14 +52,14 @@ const Card = ({ data }) => {
           <div className="mt-3 text-gray-500 text-start">
             {" "}
             <RiGitRepositoryCommitsLine className="inline w-6 h-6 mr-1" />
-            <span className="text-white">Repositories: {data.repos}</span>
+            <span className="text-white font-serif">Repositories: {data.repos}</span>
           </div>
-          <div className="mt-3 text-gray-500 text-start">
+          <div className="mt-3 text-gray-500 text-start font-serif">
             {" "}
             <GoOrganization className="inline w-6 h-6 mr-1" />
             <span className="text-white">{data.companies}</span>
           </div>
-          <div className="flex items-center justify-center text-white mt-5">
+          <div className="flex items-center justify-center font-serif text-white mt-5">
             <Languages languages={data.languages} />
           </div>
           <div className="flex justify-center mt-7">
